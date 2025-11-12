@@ -47,6 +47,41 @@ O projeto foi desenvolvido integralmente em um único notebook no Google Colab, 
 
 <br>
 
+## 🚀 Como executar
+
+1. Abra o notebook no Colab:
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/liviaferne/GANs-fashion-mnist/blob/main/notebooks/gans.ipynb)
+
+2. Ative GPU no ambiente de execução: `Runtime > Change runtime type > Hardware accelerator > GPU`
+
+3. Execute as células sequencialmente para:
+   - Carregar e preparar os dados (Fashion MNIST)
+   - Treinar os modelos Vanilla GAN e DCGAN
+   - Visualizar gráficos de perda e imagens geradas
+
+4. É possível ajustar os parâmetros de aprendizado, número de épocas e tamanho do vetor de ruído para observar diferentes comportamentos no treinamento.
+
+
+<br>
+
+
+## 🖼️ Resultados
+
+### - Vanilla GAN
+Para ambos os modelos, os parâmetros do otimizador **Adam** foram ajustados para: `learning_rate=2e-4`, `beta_1=0.5`. O treinamento foi realizado por **10 épocas**.
+
+**GIF das imagens geradas pelo Vanilla GAN:**  
+![Vanilla GAN](notebooks/vanilla_gan.gif)
+
+
+### - DCGAN 
+Os parâmetros do otimizador **Adam** foram ajustados para: `learning_rate=7e-5` (gerador), `learning_rate=2e-4` (discriminador), `beta_1=0.5` (ambos). O treinamento foi realizado por **10 épocas**.
+
+**GIF das imagens geradas pelo Vanilla GAN:**  
+![Vanilla GAN](notebooks/dcgan.gif)
+
+<br>
+
 ## 🔗 Referências
 
 - [Idiot Developer - Vanilla GAN in TensorFlow](https://idiotdeveloper.com/vanilla-gan-in-tensorflow/)  
